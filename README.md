@@ -30,15 +30,17 @@ A simple task manager built with FastAPI using MySQL and Jinja2 templates.
 
 ## 🖼 Screenshots
 
-* ![Register](https://github.com/user-attachments/assets/70cf6dbf-1c8b-4531-bfc0-ba14701849d6)
-* ![Login](https://github.com/user-attachments/assets/2425e232-bf77-438c-9020-b6cec84c98ad)
-* ![Dashboard with Filter](https://github.com/user-attachments/assets/94cf35bb-4f04-4385-9a5a-fec8d33fab5e)
-* ![Dashboard Typing](https://github.com/user-attachments/assets/eec42637-5759-482e-b199-6e6ccded8014)
-* ![Dashboard Task Added](https://github.com/user-attachments/assets/32674452-3e56-458d-8370-3b71c5d431d1)
-* ![Admin Login](https://github.com/user-attachments/assets/e4991292-ef00-4640-9655-9327c2c0db01)
-* ![Admin Dashboard](https://github.com/user-attachments/assets/301f4475-ddce-43ef-a1ca-d28422efff5b)
-* ![User Tasks](https://github.com/user-attachments/assets/308e6dfa-cbe6-446d-8bd1-9b62a1281fda)
-
+* Register ![Register](https://github.com/user-attachments/assets/f85370ca-3443-4693-9f52-4d670a7ce2bc)
+* Login ![Login](https://github.com/user-attachments/assets/62f746c3-8dc1-492b-a603-4d62c12a520d)
+* Dashboard with Filter ![Dashboard with Filter](https://github.com/user-attachments/assets/54caf3e8-a1c1-4112-84c8-db819ce3a1dd)
+* Dashboard Typing ![Dashboard Typing](https://github.com/user-attachments/assets/c064da47-77bc-4ec5-af97-3072921b8670)
+* Dashboard Task Added ![Dashboard Task Added](https://github.com/user-attachments/assets/ae21fbb3-0ca0-41ca-8a95-281342fe4ace)
+* Admin Login ![Admin Login](https://github.com/user-attachments/assets/24000a96-f568-4d8c-89c3-2680ff05934a)
+* Admin Dashboard ![Admin Dashboard](https://github.com/user-attachments/assets/05c14821-51dd-439a-a5c2-c96f2b7425ad)
+* User Tasks ![User Tasks](https://github.com/user-attachments/assets/69f75d51-2fec-48dc-ac8d-abe5d6223b2a)
+* Database - logs ![Database - logs](https://github.com/user-attachments/assets/bd54feef-b99f-4227-85b0-c31b12b182be)
+* Database - Users ![Database - Users](https://github.com/user-attachments/assets/d2d9676b-c31f-4d88-a7ff-6f848dd2a1c9)
+* Database - Tasks ![Database - Tasks](https://github.com/user-attachments/assets/230a0e55-0dac-4eb8-a935-61abbe9a65c0)
 
 ---
 
