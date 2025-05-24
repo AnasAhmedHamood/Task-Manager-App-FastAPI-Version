@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ user }}'s Tasks</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+      font-family: 'Inter', sans-serif;
+      color: white;
+      padding: 2rem;
+    }
+    .container {
+      background: #1c1e29;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #2d3436;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+    .completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>{{ user }}'s Task List</h2>
+    <ul>
+      {% for t in tasks %}
+        <li class="{% if t[1] %}completed{% endif %}">{{ t[0] }}</li>
+      {% else %}
+        <p>No tasks found.</p>
+      {% endfor %}
+    </ul>
+    <a class="back" href="/admin">&larr; Back to Admin</a>
+  </div>
+</body>
+</html>

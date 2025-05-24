@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Task Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+      min-height: 100vh;
+      padding: 30px;
+      color: #333;
+    }
+    .admin-panel {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4e4376;
+    }
+    .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: space-between;
+    }
+    .filter-form input[type="text"],
+    .filter-form select {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      flex: 1;
+      min-width: 220px;
+    }
+    .filter-form button {
+      background: #4e4376;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-form button:hover {
+      background: #3a2f5a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #f0f0f0;
+      color: #444;
+    }
+    tr:hover {
+      background: #f9f9f9;
+    }
+    .delete-btn {
+      background: #e74c3c;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .delete-btn:hover {
+      background: #c0392b;
+    }
+    .view-tasks-btn {
+      background: #4e4376;
+      color: white;
+      padding: 8px 12px;
+      margin-left: 5px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .view-tasks-btn:hover {
+      background: #372c5f;
+    }
+    .logout-form {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .logout-btn {
+      background: #dc3545;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-panel">
+    <h1>Admin Dashboard</h1>
+
+    <form method="GET" class="filter-form" action="/admin">
+      <input type="text" name="search" placeholder="Search by username or email" value="{{ search or '' }}">
+      <select name="status">
+        <option value="">All</option>
+        <option value="verified" {% if status == 'verified' %}selected{% endif %}>Verified</option>
+        <option value="unverified" {% if status == 'unverified' %}selected{% endif %}>Unverified</option>
+      </select>
+      <button type="submit">Filter</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Verified</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <td>{{ user[0] }}</td>
+          <td>{{ user[1] }}</td>
+          <td>{{ user[2] }}</td>
+          <td>{{ 'Yes' if user[3] else 'No' }}</td>
+          <td>
+            <form method="POST" action="/admin/delete/{{ user[0] }}" style="display:inline;">
+              <button class="delete-btn" type="submit">Delete</button>
+            </form>
+            <a href="/admin/tasks/{{ user[0] }}" class="view-tasks-btn">View Tasks</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <form method="POST" action="/logout" class="logout-form">
+      <button type="submit" class="logout-btn">Logout</button>
+    </form>
+  </div>
+</body>
+</html>
