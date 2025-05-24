@@ -1,4 +1,4 @@
-# task-manager-app-FastAPI-Version
+# Task-Manager-App-FastAPI-Version
 
 A simple task manager built with FastAPI using MySQL and Jinja2 templates.
 
