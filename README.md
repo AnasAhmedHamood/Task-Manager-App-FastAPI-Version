@@ -30,16 +30,15 @@ A simple task manager built with FastAPI using MySQL and Jinja2 templates.
 
 ## 🖼 Screenshots
 
-*Add screenshots here manually after commit:*
+* ![Register](https://github.com/user-attachments/assets/70cf6dbf-1c8b-4531-bfc0-ba14701849d6)
+* ![Login](https://github.com/user-attachments/assets/2425e232-bf77-438c-9020-b6cec84c98ad)
+* ![Dashboard with Filter](https://github.com/user-attachments/assets/94cf35bb-4f04-4385-9a5a-fec8d33fab5e)
+* ![Dashboard Typing](https://github.com/user-attachments/assets/eec42637-5759-482e-b199-6e6ccded8014)
+* ![Dashboard Task Added](https://github.com/user-attachments/assets/32674452-3e56-458d-8370-3b71c5d431d1)
+* ![Admin Login](https://github.com/user-attachments/assets/e4991292-ef00-4640-9655-9327c2c0db01)
+* ![Admin Dashboard](https://github.com/user-attachments/assets/301f4475-ddce-43ef-a1ca-d28422efff5b)
+* ![User Tasks](https://github.com/user-attachments/assets/308e6dfa-cbe6-446d-8bd1-9b62a1281fda)
 
-* ![Register](![image](https://github.com/user-attachments/assets/70cf6dbf-1c8b-4531-bfc0-ba14701849d6))
-* ![Login](![image](https://github.com/user-attachments/assets/2425e232-bf77-438c-9020-b6cec84c98ad))
-* ![Dashboard with Filter](![image](https://github.com/user-attachments/assets/94cf35bb-4f04-4385-9a5a-fec8d33fab5e))
-* ![Dashboard Typing](![image](https://github.com/user-attachments/assets/eec42637-5759-482e-b199-6e6ccded8014))
-* ![Dashboard Task Added](![image](https://github.com/user-attachments/assets/32674452-3e56-458d-8370-3b71c5d431d1))
-* ![Admin Login](![image](https://github.com/user-attachments/assets/e4991292-ef00-4640-9655-9327c2c0db01))
-* ![Admin Dashboard](![image](https://github.com/user-attachments/assets/301f4475-ddce-43ef-a1ca-d28422efff5b))
-* ![User Tasks](![image](https://github.com/user-attachments/assets/308e6dfa-cbe6-446d-8bd1-9b62a1281fda))
 
 ---
 
